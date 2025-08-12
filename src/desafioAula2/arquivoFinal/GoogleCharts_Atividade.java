@@ -1,4 +1,4 @@
-package desafios;
+package desafios.arquivoFinal;
 
 import java.util.Scanner;
 import java.io.FileWriter;
@@ -42,7 +42,7 @@ public class GoogleCharts_Atividade {
         System.out.println(grafico);
         
         
-        String caminhoArquivo = "grafico.html";
+        String caminhoArquivo = "src/desafioAula2/arquivoFinal/grafico.html";
 		String conteudo = 
 				"<html>\r\n"
 				+ "<head>\r\n"
