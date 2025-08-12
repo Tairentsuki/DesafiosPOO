@@ -1,0 +1,127 @@
+<html>
+<head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+          var data = google.visualization.arrayToDataTable([
+            ['Quantidade valores', 'Valores'],
+           [1,21],
+[2,84],
+[3,30],
+[4,53],
+[5,32],
+[6,46],
+[7,83],
+[8,98],
+[9,61],
+[10,30],
+[11,12],
+[12,66],
+[13,93],
+[14,84],
+[15,40],
+[16,26],
+[17,1],
+[18,46],
+[19,74],
+[20,88],
+[21,80],
+[22,31],
+[23,58],
+[24,51],
+[25,64],
+[26,91],
+[27,27],
+[28,62],
+[29,90],
+[30,17],
+[31,80],
+[32,41],
+[33,69],
+[34,60],
+[35,34],
+[36,10],
+[37,87],
+[38,85],
+[39,50],
+[40,16],
+[41,42],
+[42,32],
+[43,55],
+[44,41],
+[45,87],
+[46,17],
+[47,82],
+[48,38],
+[49,32],
+[50,67],
+[51,22],
+[52,54],
+[53,35],
+[54,27],
+[55,40],
+[56,2],
+[57,73],
+[58,23],
+[59,41],
+[60,57],
+[61,24],
+[62,77],
+[63,5],
+[64,64],
+[65,51],
+[66,16],
+[67,48],
+[68,57],
+[69,65],
+[70,13],
+[71,52],
+[72,45],
+[73,53],
+[74,64],
+[75,80],
+[76,99],
+[77,77],
+[78,30],
+[79,45],
+[80,72],
+[81,13],
+[82,98],
+[83,2],
+[84,73],
+[85,50],
+[86,79],
+[87,21],
+[88,73],
+[89,68],
+[90,77],
+[91,13],
+[92,96],
+[93,71],
+[94,86],
+[95,53],
+[96,23],
+[97,23],
+[98,99],
+[99,57],
+[100,31]          ]);
+
+          var options = {
+            title: 'Company Performance',
+            curveType: 'function',
+            legend: { position: 'bottom' }
+          };
+
+          var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+          chart.draw(data, options);
+        }
+    </script>
+</head>
+<body>
+<div id="curve_chart" style="width: 900px; height: 500px"></div>
+</body>
+</html>
